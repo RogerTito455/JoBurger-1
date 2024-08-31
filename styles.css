@@ -1,0 +1,115 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit; /* Inherit para ajustar según el contexto */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EF491F;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    max-width: 100%;
+    min-height: 100vh;
+    line-height: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto; 
+}
+figure {
+    margin-left: 4rem;
+}
+.navbar figure img {
+    width: 10%;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin-right: 5rem;
+}
+.nav-links li {
+    padding-right: 2rem;
+}
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.main-site {
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+}
+.left-site {
+    margin-right: 10rem;
+    width: 100%;;
+}
+
+.left-site h1 {
+    font-size: 7em;
+}
+.left-site p {
+    line-height: 1.5;
+    width: 75%;
+    margin-bottom: 2em;
+}
+
+.left-site button {
+    padding: 1rem 3rem;
+    border: none;
+    font-size: 1.25rem;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right-site {
+    max-width: 100%;
+}
+
+.right-site img {
+    width: 30em;
+}
+@media (max-width: 768px) {
+    .navbar {
+        margin-left: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar figure img {
+        width: 20%; /* Ajustar tamaño en pantallas más pequeñas */
+    }
+
+    .main-site {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-site img {
+        width: 100%;
+    }
+
+    .left-site h1 {
+        font-size: 4rem;
+    }
+    .left-site p {
+        width: 100%;
+    }
+
+    .left-site {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
