@@ -73,6 +73,10 @@ figure {
     font-weight: bold;
     cursor: pointer;
 }
+.left-site button a {
+    text-decoration: none;
+    color: white;
+}
 .right-site {
     max-width: 100%;
 }

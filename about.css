@@ -1,0 +1,49 @@
+/* Reset global y box-sizing */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    background-color: #F7F2EF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.content {
+    justify-content: center;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.title {
+    color: #EE4B1E;
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.image-portrait {
+    margin-top: 10rem;
+    text-align: center; /* Centra el texto respecto a la imagen */
+}
+
+.image-portrait p {
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+}
+
+.image-portrait img {
+    width: 100%;
+    height: 20rem; /* Altura fija */
+    max-height: 20rem; /* Limita la altura máxima de la imagen */
+    object-fit: cover;
+}
